@@ -60,8 +60,8 @@ const quotes = [
 ]
 
 const config = {
-  timer: 4000,
   container: 'quote-box',
+  timer: 4000,
   background: document.querySelector('body'),
   maxRgbValue: 150 /* Better bg contrast with values of 150 and below */
 }
@@ -134,11 +134,10 @@ const setRandomBackground = () => {
 	 * Set the background element to a random RGB value
 	***/
 	config.background.style.backgroundColor = `rgb(
-													${getRandomNumber(config.maxRgbValue)}, 
-													${getRandomNumber(config.maxRgbValue)}, 
-													${getRandomNumber(config.maxRgbValue)}
-												)`
-
+		${getRandomNumber(config.maxRgbValue)}, 
+		${getRandomNumber(config.maxRgbValue)}, 
+		${getRandomNumber(config.maxRgbValue)}
+	)`
 }
 
 /***
